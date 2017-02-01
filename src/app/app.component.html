@@ -1,3 +1,22 @@
 <h1>
-  {{title}}
+  {{title}} <!--Esto es una expresion, se reconoce por ir entre llaves-->
 </h1>
+<p [hidden]="!visible"> <!--Aqui se modifica una propiedad, se reconoce por ir entre corchetes-->
+  Adiós
+</p>
+<button (click)="decirAdios()">Decir adiós</button> <!--Aqui se controla un evento, se reconoce al ir entre parentesis-->
+<p>
+  ¿Cómo te llamas?  <input type="text" [(ngModel)]="quien"> <!--Aqui aparece un input tipo texto con un biding, se reconoce por corchete y parentesis [()], y se identifica con 'quien'-->
+</p>
+<p>
+  Hola {{quien}}
+</p>
+<p>
+  <app-prueba-componente></app-prueba-componente>
+</p>
+<p>
+  <app-zonas-valor></app-zonas-valor>
+</p>
+<p>
+  <app-login></app-login>
+</p>

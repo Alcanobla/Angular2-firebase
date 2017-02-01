@@ -1,0 +1,12 @@
+<p>
+  prueba-componente works!
+</p>
+<p>
+  {{dato}}
+</p>
+<p>
+  <button 
+    [ngClass]="{si: estadoPositivo, no: !estadoPositivo}"
+    (click)="cambiaEstado()"
+  >{{texto}}</button>
+</p>

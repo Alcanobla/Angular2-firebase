@@ -1,0 +1,20 @@
+
+<h1>Zonas de valor en Angular 2:</h1>
+ 
+               <h3>Primera zona:</h3>
+               <p>Zona: {{zonas[0]["zona"]}}</p>
+               <p>Municipio: {{zonas[0]["municipio"]}}</p>
+               <p>Año: {{zonas[0]["anio"]}}</p>
+ 
+               <h3>Listado de zonas:</h3>
+           
+
+          <!-- Utilizamos ngFor para recorrer el array -->
+              <ul>
+                <li *ngFor="let zona of zonas">
+                   <p Zona>{{zona["zona"]}}</p>
+                   <p Municipio>{{zona["municipio"]}}</p>
+                   <p Anio>{{zona["anio"]}}</p>
+                </li>
+               </ul>
+             <h1>{{ zonaslista }}</h1>
